@@ -1,0 +1,40 @@
+#VRML_SIM R2023b utf8
+# license: Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+# license url: https://cyberbotics.com/webots_assets_license
+# documentation url: https://webots.cloud/run?url=https://github.com/HyperDroids10015/FTCSimulator/main/WebotsProjects/CENTERSTAGE/protos/GoBildaRi3D_2023.proto
+# keywords: robot/wheeled
+# This is the arena for the FTC INTOTHEDEEP season
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+
+PROTO IntoTheDeepArena [
+]
+{
+  Group {
+    children [
+      RectangleArena {
+        floorSize 3.584 3.584
+        floorTileSize 3.584 3.584
+        floorAppearance PBRAppearance {
+          baseColor 0.776471 0.776471 0.776471
+          baseColorMap ImageTexture {
+            url [
+              "IntoTheDeepField.png"
+            ]
+            repeatS FALSE
+            repeatT FALSE
+          }
+          roughness 1
+          metalness 0
+        }
+        wallThickness 0.0267
+        wallHeight 0.3
+        wallAppearance PBRAppearance {
+          transparency 0.9
+          roughness 1
+          metalness 0
+        }
+      }
+    ]
+  }
+}

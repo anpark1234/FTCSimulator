@@ -1,0 +1,63 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/IntoTheDeepArena.proto"
+EXTERNPROTO "../protos/GoBildaStrafer.proto"
+
+WorldInfo {
+  title "INTOTHEDEEP"
+  contactProperties [
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation -0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation 0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 0.0961950568883719 -0.13318744558002243 8.020852443621848
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+GoBildaStrafer {
+  hidden position_0_0 8.522717893730226e-10
+  hidden position_0_1 8.51636586892893e-10
+  hidden position_0_2 8.459905739225225e-10
+  hidden position_0_3 8.453243692627322e-10
+  hidden linearVelocity_0 -2.3154377055722964e-07 -5.777886810037493e-13 -1.497442830667626e-09
+  hidden angularVelocity_0 -1.833344934825541e-12 2.222725837341632e-07 2.1820861642650967e-10
+  hidden linearVelocity_7 -2.448381103197128e-07 -3.5317816818343193e-09 3.593619133822487e-08
+  hidden angularVelocity_7 -1.7652910764147698e-10 2.223498406340276e-07 2.1820787216005456e-10
+  hidden linearVelocity_8 -2.4474822000386805e-07 3.454939018623814e-09 3.593692945000723e-08
+  hidden angularVelocity_8 1.7279942229551627e-10 2.2235001092412677e-07 2.1820693754900936e-10
+  hidden linearVelocity_9 -2.4000284538001977e-07 3.5032382936860814e-09 -3.730992688133993e-08
+  hidden angularVelocity_9 1.6957731491163375e-10 2.2234892609599975e-07 2.2018233831791955e-10
+  hidden linearVelocity_10 -2.3991474168867784e-07 -3.432248125999582e-09 -3.730916709798858e-08
+  hidden angularVelocity_10 -1.7320517026800634e-10 2.2234876692923548e-07 2.1622309741551397e-10
+  translation 1.574010108027661 0.29949815165091387 0.10363103354956045
+  rotation -6.69890199899258e-05 6.68825474835687e-05 -0.9999999955195982 1.5707926690275167
+  controller "FTCController"
+}
+IntoTheDeepArena {
+}
